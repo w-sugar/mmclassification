@@ -11,6 +11,6 @@ log_config = dict(
 
 dist_params = dict(backend='nccl')
 log_level = 'INFO'
-load_from = None
+load_from = '/home/sugar/workspace/mmclassification/checkpoints/resnet50_batch256_imagenet_20200708-cfb998bf.pth'
 resume_from = None
 workflow = [('train', 1)]

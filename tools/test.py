@@ -119,7 +119,8 @@ def main():
         warnings.warn('Class names are not saved in the checkpoint\'s '
                       'meta data, use imagenet by default.')
         CLASSES = ImageNet.CLASSES
-
+    print("aaaaa")
+    print(CLASSES)
     if not distributed:
         model = MMDataParallel(model, device_ids=[0])
         model.CLASSES = CLASSES
